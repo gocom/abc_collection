@@ -1,0 +1,3 @@
+h1. abc_collection
+
+p. This is a plugin package collection template for "textpattern/installer":https://github.com/gocom/textpattern-installer.
