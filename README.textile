@@ -1,3 +1,13 @@
 h1. abc_collection
 
 p. This is a plugin package collection template for "textpattern/installer":https://github.com/gocom/textpattern-installer.
+
+p. This is a Composer distribution package containing compiled abc_plugin. Any compiled plugin installer packages found in the package will be installed with the Composer package. While this Composer package format is available, you normally would want to use "manifest.json":https://github.com/gocom/textpattern-installer format instead of this. This format is most appropriate for distributing private bundles. For instance if your studio uses single set of plugins on all Textpattern installations, and those plugins are not available as composer packages, you could create a private composer repository or archive that contains all the installers. This would allow you to install plugins with a single command.
+
+p. The plugin installer packages are detected by naming convention. Any files that name match the format @{pfx}_{pluginName}_v{version}[_zip].txt.@ will be considered as a plugin installer. @{pfx}@ is the registered "three-letter author prefix":http://www.textpattern.net/wiki/index.php?title=Registered_Textpattern_developer_prefixes, @{pluginName}@ is the name of the plugin, @{version}@ is the version number and @[_zip]@ is an option suffix. Valid plugin installer package names would be, for instance: @abc_plugin_v1.0.5_zip.txt@ and @pfx_hello_world_v0.2.3.txt@.
+
+h2. Installing
+
+p. Using "Composer":http://getcomposer.org:
+
+bc. $ composer.phar require rah/abc_collection
