@@ -1,5 +1,7 @@
 h1. abc_collection
 
+p. "Packagist":https://packagist.org/packages/rah/abc_collection | "Twitter":http://twitter.com/gocom
+
 p. This is a plugin package collection template for "textpattern/installer":https://github.com/gocom/textpattern-installer.
 
 p. This is a Composer distribution package containing compiled abc_plugin. Any compiled plugin installer packages found in the package will be installed with the Composer package. While this Composer package format is available, you normally would want to use "manifest.json":https://github.com/gocom/textpattern-installer format instead of this. This format is most appropriate for distributing private bundles. For instance if your studio uses single set of plugins on all Textpattern installations, and those plugins are not available as composer packages, you could create a private composer repository or archive that contains all the installers. This would allow you to install plugins with a single command.
@@ -11,3 +13,9 @@ h2. Installing
 p. Using "Composer":http://getcomposer.org:
 
 bc. $ composer.phar require rah/abc_collection
+
+h2. Changelog
+
+h3. Version 1.0.0 - 2013/05/05
+
+* Initial release.
